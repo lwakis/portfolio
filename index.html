@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- Style  -->
+   <link rel="stylesheet" href="css/style.css">
+   <!-- Slider -->
+   <link rel="stylesheet" href="css/animate.min.css">
+   <link rel="stylesheet" href="css/swiper-bundle.min.css">
+   <!-- Added fonts -->
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+   <!-- Website name -->
+   <title>Mihail Pytiatov</title>
+</head>
+
+<body>
+   <div class="wrapper">
+      <div id="solarsystem"></div>
+      <header class="header">
+         <div class="container">
+            <div class="header__row">
+               <a href="#" class="header__logo">
+                  <img src="img/logo.svg" alt="Logo">
+               </a>
+               <div class="header__burger">
+                  <span></span>
+               </div>
+               <nav class="header__menu">
+                  <ul class="header__list">
+                     <li>
+                        <a href="#me" class="header__link" id="btn__me">Information</a>
+                     </li>
+                     <li>
+                        <a href="#skills" class="header__link" id="btn__skills">Skills</a>
+                     </li>
+                     <li>
+                        <a href="#education" class="header__link" id="btn__education">Education</a>
+                     </li>
+                     <li>
+                        <a href="#project" class="header__link" id="btn__project">Last Projects</a>
+                     </li>
+                  </ul>
+               </nav>
+            </div>
+         </div>
+      </header>
+      <section class="me" id="me">
+         <div class="container">
+            <div class="me__row">
+               <div class="me__text">
+                  <h2 class="me__position">Frontend Developer</h2>
+                  <h1 class="me__name">Mihail Pytiatov</h1>
+                  <p class="me__age">Age: 20</p>
+                  <p class="me__location">Location: Russia Novosibirsk</p>
+                  <a href='mailto:lwakis@yandex.ru' class="me__email">
+                     lwakis@yandex.ru
+                  </a> <br>
+                  <a href="tel:+79994674578" class="me__phone">+79994674578</a>
+                  <ul class="me__icons-row">
+                     <li class="me__item">
+                        <a href="https://github.com/lwakis" target="_blank">
+                           <img src="img/icons/github.svg" alt="GitHub">
+                        </a>
+                     </li>
+                     <li class="me__item">
+                        <a href="https://t.me/c0cona" target="_blank">
+                           <img src="img/icons/telegram.svg" alt="Telegram">
+                        </a>
+                     </li>
+                     <li class="me__item">
+                        <a href="img/Mihail_Pytiatov.pdf" target="_blank" download>
+                           <img src="img/icons/download.svg" alt="Download">
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="skills" id="skills">
+         <div class="container">
+            <h2 class="skills__title title">Skills</h2>
+            <div class="skills__row">
+               <img src="img/skillsPhoto.png" alt="Skills photo" class="skills__img">
+               <div class="skills__text">
+                  <p class="skills__technologies">
+                     <span>Technologies:</span>
+                     HTML5, CSS3, FlexBox, SCSS, BEM,<br>
+                     JavaScript, TypeScript,<br>
+                     React, Redux,<br>
+                     Version Control - Git
+                  </p>
+                  <p class="skills__language">
+                     <span>Language:</span>
+                     Russian - native <br>
+                     English - pre-intermediate
+                  </p>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="education" id="education">
+         <div class="container">
+            <h2 class="education__title title">Education</h2>
+            <div class="education__item">
+               <p class="education__name">
+                  Informatics and computer engineering 
+                  <br>
+                  <br>
+                  СибГУТИ 2019-2024
+               </p>
+               <img src="img/education/logos.png" alt="Logo" class="education__logo">
+            </div>
+         </div>
+      </section>
+      <section class="project" id='project'>
+         <div class="container">
+            <h2 class="project__title title">Last Projects</h2>
+            <div class="swiper-container project__slider">
+               <!-- Additional required wrapper -->
+               <div class="swiper-wrapper">
+                  <!--  !Slide -->
+                  <div class="swiper-slide project__slide">
+                     <a href="https://github.com/lwakis/pet-shop" target="_blank" class="project__img">
+                        <img src="img/projects/petShop.png" alt="shop" style="width: 90%; margin: 0 auto;">
+                     </a>
+                  </div>
+                  <!--  !Slide -->
+                  <div class="swiper-slide project__slide" style="justify-content: center;">
+                     <a href="https://t.me/rpg23_bot" target="_blank" class="project__img">
+                        <video controls autoplay src="img/projects/rpgBot.mp4" alt="bot" style="width: 90%; margin: 0 auto;">
+                     </a>
+                  </div>
+                  <!--  !Slide -->
+                  <div class="swiper-slide project__slide">
+                     <a href="https://github.com/lwakis/react-pizza" target="_blank" class="project__img">
+                        <img src="img/projects/ReactPizza.jpg" alt="media" style="width: 90%; margin: 0 auto;">
+                     </a>
+                  </div>
+
+               </div>
+               <div class="swiper-pagination"></div>
+            </div>
+         </div>
+      </section>
+   </div>
+
+   <!-- scripts -->
+   <script src="js/swiper-bundle.min.js"></script>
+   <script src="js/wow.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src='js/script.js'></script>
+</body>
+
+</html>
